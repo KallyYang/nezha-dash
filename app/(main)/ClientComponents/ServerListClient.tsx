@@ -22,10 +22,31 @@ export default function ServerListClient() {
     return a.id - b.id;
   });
 
+  const groupedServers = sortedServers.reduce(
+    (acc, server) => {
+      const tag = server.tag || "default"; // 如果没有 tag，使用 "未分组"
+      if (!acc[tag]) {
+        acc[tag] = [];
+      }
+      acc[tag].push(server);
+      return acc;
+    },
+    {} as Record<string, typeof sortedServers>,
+  );
+  
   return (
     <section className="grid grid-cols-1 gap-2 md:grid-cols-2">
-      {sortedServers.map((serverInfo) => (
-        <ServerCard key={serverInfo.id} serverInfo={serverInfo} />
+      {Object.entries(groupedServers).map(([tag, servers]) => (
+        <div key={tag}>
+          <h2 className="text-lg font-bold">{tag}</h2>
+          <div className="mt-2">
+            {servers.map((serverInfo) => (
+              <div className="mb-2">
+                <ServerCard key={serverInfo.id} serverInfo={serverInfo} />
+              </div>
+            ))}
+          </div>
+        </div>
       ))}
     </section>
   );
