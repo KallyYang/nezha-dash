@@ -58,35 +58,35 @@ export default function ServerCard({
         <div className={"flex flex-col"}>
           <p className="text-xs text-muted-foreground">CPU</p>
           <div className="flex items-center text-xs font-semibold">
-            {cpu.toFixed(2)}%
+            {cpu.toFixed(1)}%
           </div>
           <ServerUsageBar value={cpu} />
         </div>
         <div className={"flex flex-col"}>
           <p className="text-xs text-muted-foreground">Mem</p>
           <div className="flex items-center text-xs font-semibold">
-            {mem.toFixed(2)}%
+            {mem.toFixed(1)}%
           </div>
           <ServerUsageBar value={mem} />
         </div>
         <div className={"flex flex-col"}>
           <p className="text-xs text-muted-foreground">STG</p>
           <div className="flex items-center text-xs font-semibold">
-            {stg.toFixed(2)}%
+            {stg.toFixed(1)}%
           </div>
           <ServerUsageBar value={stg} />
         </div>
         <div className={"flex flex-col"}>
           <p className="text-xs text-muted-foreground">Upload</p>
           <div className="flex items-center text-xs font-semibold">
-            {up.toFixed(2)}
+            {up.toFixed(1)}
             Mb/s
           </div>
         </div>
         <div className={"flex flex-col"}>
           <p className="text-xs text-muted-foreground">Download</p>
           <div className="flex items-center text-xs font-semibold">
-            {down.toFixed(2)}
+            {down.toFixed(1)}
             Mb/s
           </div>
         </div>
