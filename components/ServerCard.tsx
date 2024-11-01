@@ -62,21 +62,21 @@ export default function ServerCard({
             <div className={"flex w-14 flex-col"}>
               <p className="text-xs text-muted-foreground">{t("CPU")}</p>
               <div className="flex items-center text-xs font-semibold">
-                {cpu.toFixed(2)}%
+                {cpu.toFixed(0)}%
               </div>
               <ServerUsageBar value={cpu} />
             </div>
             <div className={"flex w-14 flex-col"}>
               <p className="text-xs text-muted-foreground">{t("Mem")}</p>
               <div className="flex items-center text-xs font-semibold">
-                {mem.toFixed(2)}%
+                {mem.toFixed(0)}%
               </div>
               <ServerUsageBar value={mem} />
             </div>
             <div className={"flex w-14 flex-col"}>
               <p className="text-xs text-muted-foreground">{t("STG")}</p>
               <div className="flex items-center text-xs font-semibold">
-                {stg.toFixed(2)}%
+                {stg.toFixed(0)}%
               </div>
               <ServerUsageBar value={stg} />
             </div>
