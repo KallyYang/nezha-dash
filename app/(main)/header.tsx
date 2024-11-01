@@ -53,7 +53,7 @@ function Header() {
           </p>
         </section>
         <section className="flex items-center gap-2">
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
           <ModeToggle />
         </section>
       </section>
