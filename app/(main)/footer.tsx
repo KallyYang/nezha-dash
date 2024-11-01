@@ -5,7 +5,7 @@ export const experimental_ppr = true
 
 export default function Footer() {
   const t = useTranslations("Footer");
-  const version = pack.version;
+  // const version = pack.version;
   return (
     <footer className="mx-auto w-full max-w-5xl">
       <section className="flex flex-col">
