@@ -1,4 +1,4 @@
-import pack from "@/package.json";
+// import pack from "@/package.json";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
