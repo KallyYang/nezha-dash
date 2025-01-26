@@ -1,6 +1,6 @@
 "use client"
 
-import { LanguageSwitcher } from "@/components/LanguageSwitcher"
+// import { LanguageSwitcher } from "@/components/LanguageSwitcher"
 import { ModeToggle } from "@/components/ThemeSwitcher"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -54,7 +54,7 @@ function Header() {
           <div className="hidden sm:block">
             <Links />
           </div>
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
           <ModeToggle />
         </section>
       </section>
