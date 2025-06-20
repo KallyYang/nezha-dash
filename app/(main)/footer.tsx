@@ -45,7 +45,7 @@ export default function Footer() {
         </p> */}
         <section className={`mt-1 flex items-center gap-2 ${baseTextStyles}`}>
           {t("section_607-869_2020")}
-          {currentYear} <FooterLink href={PERSONAL_URL}>{t("a_800-850_Hamster1963")}</FooterLink>
+          {currentYear} <FooterLink href={"https://space.kallyyang.com"}>{t("a_800-850_Hamster1963")}</FooterLink>
         </section>
       </section>
       <p className={`mt-1 ${baseTextStyles}`}>

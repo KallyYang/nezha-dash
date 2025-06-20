@@ -88,29 +88,29 @@ export default function ServerCard({
             )}
             <div className={"flex w-14 flex-col"}>
               <p className="text-muted-foreground text-xs">{t("CPU")}</p>
-              <div className="flex items-center font-semibold text-xs">{cpu.toFixed(2)}%</div>
+              <div className="flex items-center font-semibold text-xs">{cpu.toFixed(1)}%</div>
               <ServerUsageBar value={cpu} />
             </div>
             <div className={"flex w-14 flex-col"}>
               <p className="text-muted-foreground text-xs">{t("Mem")}</p>
-              <div className="flex items-center font-semibold text-xs">{mem.toFixed(2)}%</div>
+              <div className="flex items-center font-semibold text-xs">{mem.toFixed(1)}%</div>
               <ServerUsageBar value={mem} />
             </div>
             <div className={"flex w-14 flex-col"}>
               <p className="text-muted-foreground text-xs">{t("STG")}</p>
-              <div className="flex items-center font-semibold text-xs">{stg.toFixed(2)}%</div>
+              <div className="flex items-center font-semibold text-xs">{stg.toFixed(1)}%</div>
               <ServerUsageBar value={stg} />
             </div>
             <div className={"flex w-14 flex-col"}>
               <p className="text-muted-foreground text-xs">{t("Upload")}</p>
               <div className="flex items-center font-semibold text-xs">
-                {up >= 1024 ? `${(up / 1024).toFixed(2)}G/s` : `${up.toFixed(2)}M/s`}
+                {up >= 1024 ? `${(up / 1024).toFixed(1)}G/s` : `${up.toFixed(1)}M/s`}
               </div>
             </div>
             <div className={"flex w-14 flex-col"}>
               <p className="text-muted-foreground text-xs">{t("Download")}</p>
               <div className="flex items-center font-semibold text-xs">
-                {down >= 1024 ? `${(down / 1024).toFixed(2)}G/s` : `${down.toFixed(2)}M/s`}
+                {down >= 1024 ? `${(down / 1024).toFixed(1)}G/s` : `${down.toFixed(1)}M/s`}
               </div>
             </div>
           </section>
